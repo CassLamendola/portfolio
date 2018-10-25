@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import './styles/index.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className='layout'>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[ { name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' } ]}

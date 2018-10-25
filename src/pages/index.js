@@ -17,9 +17,10 @@ class IndexPage extends Component {
 
   render() { 
     return (
-      <div>
+      <div className='page home'>
         <NavBar goTo={this.goTo}/>
         <div
+          className='page-content'
           style = {{
             display: 'flex',
             flexDirection: 'column',
@@ -27,8 +28,8 @@ class IndexPage extends Component {
             alignItems: 'center',
             width: '75vw'
           }}>
-          <Name direction='right' name='Cassandra' color='#f53240' inOut={this.state.home}/>
-          <Name direction='left' name='Lamendola' color='#02c8a7' inOut={this.state.home}/>
+          <Name direction='right' name='Cassandra' color='#ef77b0' inOut={this.state.home}/>
+          <Name direction='left' name='Lamendola' color='#03a1da' inOut={this.state.home}/>
         </div>
       </div>
     );
